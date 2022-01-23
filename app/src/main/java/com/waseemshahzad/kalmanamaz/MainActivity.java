@@ -25,6 +25,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.material.bottomsheet.BottomSheetDialog;
+import com.google.firebase.BuildConfig;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -127,7 +128,7 @@ public class MainActivity extends AppCompatActivity {
                 String defultapp = "WhatsApp";
 
                 try {
-                    String url = "https://api.whatsapp.com/send?phone=+923477442050" +
+                    String url = "https://api.whatsapp.com/send?phone=+923012861054" +
                             "&text=" + URLEncoder.encode("HELLO Kalma App TEAM !  ", "UTF-8");
 
                     Intent sendIntent = new Intent("android.intent.action.MAIN");
@@ -148,7 +149,7 @@ public class MainActivity extends AppCompatActivity {
         iv_google.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Intent.ACTION_VIEW,Uri.parse("mailto:"+"pksofter@gmail.com"));
+                Intent intent = new Intent(Intent.ACTION_VIEW,Uri.parse("mailto:"+"wasimanak@gmail.com"));
 //                intent.putExtra(Intent.EXTRA_SUBJECT, "KSK User");
                 intent.putExtra(Intent.EXTRA_SUBJECT, "KSK USER");
                 intent.putExtra(Intent.EXTRA_EMAIL, "\nThis email from Kalma App USER");
@@ -165,7 +166,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent=null;
-                String url="https://www.youtube.com/channel/UCTV_XVFjZAX2xg9OwQzf_nA";
+                String url="https://www.youtube.com/c/WasiManak";
                 try {
                     intent =new Intent(Intent.ACTION_VIEW);
                     intent.setPackage("com.google.android.youtube");
@@ -181,7 +182,7 @@ public class MainActivity extends AppCompatActivity {
         iv_facebook.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String YourPageURL = "https://www.facebook.com/n/?966338360104991";
+                String YourPageURL = "https://www.facebook.com/CEdiscoveries";
                 Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(YourPageURL));
 
                 startActivity(browserIntent);
