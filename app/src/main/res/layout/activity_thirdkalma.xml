@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Firstkalma"
+    android:orientation="vertical"
+    android:background="@drawable/appbgh"
+    >
+    <ImageView
+        android:id="@+id/btn_next"
+        android:layout_width="@dimen/_70sdp"
+        android:layout_height="@dimen/_70sdp"
+        android:src="@drawable/next"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        app:tint="@color/Yellow">
+    </ImageView>
+    <ImageView
+        android:id="@+id/btn_prev"
+        android:layout_width="@dimen/_70sdp"
+        android:layout_height="@dimen/_70sdp"
+        android:src="@drawable/prev"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        app:tint="@color/Yellow">
+    </ImageView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center_horizontal"
+        android:text="تیسرا کلمہ تمجید"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:layout_marginTop="90dp"
+        android:fontFamily="@font/urduregular"
+        android:textSize="25dp"
+        android:background="@drawable/bg_kalma"
+        >
+    </TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/Yellow"
+        android:padding="@dimen/_10sdp"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="@font/mirza_regular"
+        android:text="سُبْحَانَ ٱللَّٰهِ وَٱلْحَمْدُ لِلَّٰهِ وَلَا إِلَٰهَ إِلَّا ٱللَّٰهُ وَٱللَّٰهُ أَكْبَرُ وَلَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِٱللَّٰهِ ٱلْعَلِيِّ ٱلْعَظِيمِ	ِ"
+        android:textAlignment="center"
+        android:textSize="35dp"
+        android:lineSpacingExtra="@dimen/_10sdp"
+        >
+    </TextView>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/white">
+
+    </View>
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_10sdp"
+        android:layout_marginBottom="100dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/Yellow"
+        android:layout_gravity="center_horizontal"
+
+        android:text="اللہ کی ذات پاک ہے اور سب تعریفے اللہ کیلئے ہے اور اللہ کے سوا کوئی معبود نہیں اور اللہ بہت بڑا ہے گناہو سے بچنے کی طاقت اور نیک کام کرنے کی توفیق نہیں مگر کی جانب سے جو بہت بلند اور عظمت والا ہے۔
+"
+        android:textAlignment="center"
+        android:fontFamily="@font/urduregular"
+        android:textSize="20dp"
+        >
+    </TextView>
+    </ScrollView>
+    </LinearLayout>
+</RelativeLayout>

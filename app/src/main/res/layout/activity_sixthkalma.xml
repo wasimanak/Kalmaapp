@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Firstkalma"
+    android:orientation="vertical"
+    android:background="@drawable/appbgh"
+    >
+    <ImageView
+        android:id="@+id/btn_next"
+        android:layout_width="@dimen/_70sdp"
+        android:layout_height="@dimen/_70sdp"
+        android:src="@drawable/next"
+        android:visibility="gone"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        app:tint="@color/Yellow">
+    </ImageView>
+    <ImageView
+        android:id="@+id/btn_prev"
+        android:layout_width="@dimen/_70sdp"
+        android:layout_height="@dimen/_70sdp"
+        android:src="@drawable/prev"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        app:tint="@color/Yellow">
+    </ImageView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center_horizontal"
+        android:text="چھٹا کلمہ رد کفر"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:fontFamily="@font/urduregular"
+        android:textSize="25dp"
+        android:layout_marginTop="90dp"
+        android:background="@drawable/bg_kalma"
+        >
+    </TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/Yellow"
+        android:padding="@dimen/_10sdp"
+        android:text="ٱللَّٰهُمَّ إِنِّي أَعُوذُ بِكَ مِنْ أَنْ أُشْرِكَ بِكَ شَيْءً وَأَنَا أَعْلَمُ بِهِ وَأَسْتَغْفِرُكَ لِمَا لَا أَعْلَمُ بِهِ تُبْتُ عَنْهُ وَتَبَرَّأَتُ مِنَ ٱلْكُفْرِ وَٱلشِّرْكِ وَٱلْكِذْبِ وَٱلْغِيبَةِ وَٱلْبِدْعَةِ وَٱلنَّمِيمَةِ وَٱلْفَوَاحِشِ وَٱلْبُهْتَانِ وَٱلْمَعَاصِي كُلِّهَا وَأَسْلَمْتُ وَأَقُولُ لَا إِلَٰهَ إِلَّا ٱللَّٰهُ مُحَمَّدٌ رَسُولُ ٱللَّٰهِ	"
+        android:textAlignment="center"
+        android:fontFamily="@font/mirza_regular"
+        android:textSize="30dp"
+        android:lineSpacingExtra="@dimen/_10sdp"
+
+        >
+    </TextView>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/white">
+
+    </View>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginBottom="100dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/Yellow"
+        android:text="آے اللہ میں پناہ مانگتا ہو اس بات سے کہ میں کسی شے کو تیرا شریک بناو جان بوجھ کر،اور بخشش مانگتاہو میں تم سے اس کام کی جو میں جانتا نہیں ہواور میں نے اس سے توبہ کیا اور بیزار ہوا کفر سے، شرک سے، اور جھوٹ سے، اور غیبت سے، اور بدعت سے ، اور چغلی سے ، اور بے حیائی سے، اور بہتان سے اور تمام گناہو سے اور میں اسلام لایا اور میں کہتا ہوکہ اللہ کے سوا کوئی معبود نہیں اور محمد ﷺ اللہ کے رسول ہے۔
+
+"
+        android:textAlignment="center"
+        android:fontFamily="@font/urduregular"
+        android:textSize="20dp"
+
+        >
+    </TextView>
+    </ScrollView>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/appbgh"
+
+    >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.4"
+        android:background="@color/black">
+
+
+    </View>
+
+    <LinearLayout
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        >
+
+
+        <Button
+            android:id="@+id/btn_kalma"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#003C3A"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="کلمے"
+            android:fontFamily="@font/urduregular"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            >
+
+        </Button>
+        <Button
+            android:layout_width="match_parent"
+            android:id="@+id/btn_read"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#014C7E"
+            android:layout_height="70dp"
+            android:visibility="gone"
+            android:text="نماز"
+            android:fontFamily="@font/urduregular"
+            android:textStyle="bold"
+            android:textSize="20dp"
+
+            >
+
+
+        </Button>
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:id="@+id/btn_resume"
+            android:backgroundTint="#014C7E"
+            android:layout_marginTop="10dp"
+            android:layout_height="70dp"
+            android:text="Resume"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:visibility="gone"
+            >
+
+
+        </Button>
+
+        <Button
+            android:id="@+id/btn_share"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#003C3A"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="Share"
+            android:textStyle="bold"
+            android:textSize="20dp"
+
+            >
+
+
+        </Button>
+        <Button
+            android:id="@+id/btn_rateus"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#003C3A"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="Rate Us"
+            android:textStyle="bold"
+            android:textSize="20dp"
+
+            >
+
+
+        </Button>
+        <Button
+            android:id="@+id/btn_contactus"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#003C3A"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="Contact Us"
+            android:textStyle="bold"
+            android:textSize="20dp"
+
+            >
+
+
+        </Button>
+
+    </LinearLayout>
+
+</RelativeLayout>

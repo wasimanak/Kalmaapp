@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/appbgh"
+    >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.5"
+        android:background="@color/black">
+
+
+    </View>
+
+    <LinearLayout
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        >
+
+
+        <Button
+            android:id="@+id/first_kalma"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#003C3A"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="پہلا کلمہ طیب"
+            android:fontFamily="@font/urduregular"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            >
+
+        </Button>
+        <Button
+            android:layout_width="match_parent"
+            android:id="@+id/second_kalma"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#003C3A"
+            android:layout_height="70dp"
+            android:text="دوسرا کلمہ شہادت"
+            android:fontFamily="@font/urduregular"
+            android:textStyle="bold"
+            android:textSize="20dp"
+
+            >
+
+
+        </Button>
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:id="@+id/third_kalma"
+            android:backgroundTint="#003C3A"
+            android:layout_marginTop="10dp"
+            android:layout_height="70dp"
+            android:text="تیسرا کلمہ تمجید"
+            android:fontFamily="@font/urduregular"
+            android:textStyle="bold"
+            android:textSize="20dp"
+
+            >
+
+
+        </Button>
+
+        <Button
+            android:id="@+id/fourth_kalma"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#003C3A"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="چوتھا کلمہ توحید"
+            android:textStyle="bold"
+            android:fontFamily="@font/urduregular"
+            android:textSize="20dp"
+
+            >
+
+
+        </Button>
+        <Button
+            android:id="@+id/fifth_kalma"
+            android:fontFamily="@font/urduregular"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#003C3A"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="پانچواں کلمہ استغفار"
+            android:textStyle="bold"
+            android:textSize="20dp"
+
+            >
+
+
+        </Button>
+        <Button
+            android:id="@+id/sixth_kalma"
+            android:fontFamily="@font/urduregular"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#003C3A"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="چھٹا کلمہ رد کفر"
+            android:textStyle="bold"
+            android:textSize="20dp"
+
+            >
+
+
+        </Button>
+
+    </LinearLayout>
+
+</RelativeLayout>

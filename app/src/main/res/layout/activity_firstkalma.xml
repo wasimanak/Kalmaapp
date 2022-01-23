@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Firstkalma"
+    android:orientation="vertical"
+    android:background="@drawable/appbgh"
+    >
+
+    <ImageView
+        android:id="@+id/btn_next"
+        android:layout_width="@dimen/_70sdp"
+        android:layout_height="@dimen/_70sdp"
+        android:src="@drawable/next"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        app:tint="@color/Yellow">
+    </ImageView>
+    <ImageView
+        android:id="@+id/btn_prev"
+        android:layout_width="@dimen/_70sdp"
+        android:layout_height="@dimen/_70sdp"
+        android:src="@drawable/prev"
+        android:visibility="gone"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        app:tint="@color/Yellow">
+    </ImageView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="90dp"
+            android:background="@drawable/bg_kalma"
+            android:fontFamily="@font/urduregular"
+            android:text="پہلا کلمہ طیب"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="25dp"></TextView>
+
+        <TextView
+            android:layout_width="310dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/mirza_regular"
+            android:lineSpacingExtra="@dimen/_10sdp"
+            android:text="لَا إِلَٰهَ إِلَّا ٱللَّٰهُ مُحَمَّدٌ رَسُولُ ٱللَّٰهِ	"
+            android:textAlignment="center"
+            android:textColor="@color/Yellow"
+            android:textSize="35dp"
+
+            ></TextView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/white">
+
+        </View>
+
+        <TextView
+            android:layout_width="310dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/_100sdp"
+            android:fontFamily="@font/urduregular"
+            android:text="اللہ کے سوا کوئی معبود نہیں محمّدؐ اللہ کے رسول ہیں"
+            android:textAlignment="center"
+            android:textColor="@color/Yellow"
+            android:textSize="20dp"
+
+            >
+
+        </TextView>
+
+    </LinearLayout>
+</RelativeLayout>
