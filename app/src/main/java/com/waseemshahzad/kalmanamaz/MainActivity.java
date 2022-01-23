@@ -44,7 +44,7 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
     ArrayList<ContactsModel> contactList = new ArrayList<>();
-    Button btn_kalma,btn_rateus,btn_share,btn_contactus;
+    Button btn_kalma,btn_rateus,btn_share,btn_contactus,btn_imanmufasil;
 
     private static final String[] PROJECTION = new String[]{
             ContactsContract.CommonDataKinds.Phone.CONTACT_ID,
@@ -61,6 +61,7 @@ public class MainActivity extends AppCompatActivity {
         btn_contactus=findViewById(R.id.btn_contactus);
         btn_rateus=findViewById(R.id.btn_rateus);
         btn_share=findViewById(R.id.btn_share);
+        btn_imanmufasil=findViewById(R.id.btn_imanmufasil);
         if (!new SessionManager(MainActivity.this).getFirstRun()) {
             termsdialog(MainActivity.this, R.layout.termsandconditions);
 
@@ -72,7 +73,12 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
+        btn_imanmufasil.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this,Eman_activity.class));
+            }
+        });
         btn_kalma.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

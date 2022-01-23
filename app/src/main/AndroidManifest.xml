@@ -15,6 +15,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.KalmaNamaz">
         <activity
+            android:name=".Eman_activity"
+            android:exported="false" />
+        <activity
             android:name=".Sixthkalma"
             android:exported="false" />
         <activity
