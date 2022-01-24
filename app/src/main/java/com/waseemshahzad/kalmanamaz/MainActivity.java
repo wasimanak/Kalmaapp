@@ -23,7 +23,6 @@ import android.widget.CompoundButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import com.google.android.material.bottomsheet.BottomSheetDialog;
 import com.google.firebase.BuildConfig;
 import com.google.firebase.database.DataSnapshot;
@@ -62,6 +61,9 @@ public class MainActivity extends AppCompatActivity {
         btn_rateus=findViewById(R.id.btn_rateus);
         btn_share=findViewById(R.id.btn_share);
         btn_imanmufasil=findViewById(R.id.btn_imanmufasil);
+
+
+
         if (!new SessionManager(MainActivity.this).getFirstRun()) {
             termsdialog(MainActivity.this, R.layout.termsandconditions);
 
@@ -110,10 +112,11 @@ public class MainActivity extends AppCompatActivity {
     public void showDialog(){
         Dialog dialog = new Dialog(this);
         dialog.setContentView(R.layout.contactus_dialoge);
-
+        dialog.getWindow().setBackgroundDrawableResource(R.drawable.dilog_bg);
         ImageView iv_call,iv_facebook,iv_google,iv_youtube;
 
         dialog.show();
+
         Button btn_close = dialog.findViewById(R.id.btn_close);
         btn_close.setOnClickListener(new View.OnClickListener() {
             @Override

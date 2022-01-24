@@ -14,104 +14,98 @@
         android:layout_height="match_parent"
         android:alpha="0.4"
         android:background="@color/black">
-
-
     </View>
 
+
     <LinearLayout
-        android:layout_centerVertical="true"
-        android:layout_gravity="center"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
         android:orientation="vertical"
-        android:padding="20dp"
-        >
+        android:padding="20dp">
 
 
         <Button
             android:id="@+id/btn_kalma"
-            android:layout_marginTop="10dp"
-            android:backgroundTint="#003C3A"
             android:layout_width="match_parent"
             android:layout_height="70dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#003C3A"
+            android:fontFamily="@font/urduregular"
             android:text="کلمے"
-            android:fontFamily="@font/urduregular"
-            android:textStyle="bold"
             android:textSize="20dp"
-            >
+            android:textStyle="bold">
 
         </Button>
+
         <Button
-            android:layout_width="match_parent"
             android:id="@+id/btn_imanmufasil"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
             android:layout_marginTop="10dp"
             android:backgroundTint="#003C3A"
-            android:layout_height="70dp"
-            android:text="ایمان مفصل و مجمل"
             android:fontFamily="@font/urduregular"
-            android:textStyle="bold"
+            android:text="ایمان مفصل و مجمل"
             android:textSize="20dp"
-            >
-        </Button>
+            android:textStyle="bold"></Button>
 
         <Button
-            android:layout_width="match_parent"
             android:id="@+id/btn_resume"
-            android:backgroundTint="#014C7E"
-            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
             android:layout_height="70dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#014C7E"
             android:text="Resume"
-            android:textStyle="bold"
             android:textSize="20dp"
-            android:visibility="gone"
-            >
+            android:textStyle="bold"
+            android:visibility="gone">
 
 
         </Button>
 
         <Button
             android:id="@+id/btn_share"
-            android:layout_marginTop="10dp"
-            android:backgroundTint="#003C3A"
             android:layout_width="match_parent"
             android:layout_height="70dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#003C3A"
             android:text="Share"
-            android:textStyle="bold"
             android:textSize="20dp"
+            android:textStyle="bold"
 
             >
 
 
         </Button>
+
         <Button
             android:id="@+id/btn_rateus"
-            android:layout_marginTop="10dp"
-            android:backgroundTint="#003C3A"
             android:layout_width="match_parent"
             android:layout_height="70dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#003C3A"
             android:text="Rate Us"
-            android:textStyle="bold"
             android:textSize="20dp"
+            android:textStyle="bold"
 
             >
 
 
         </Button>
+
         <Button
             android:id="@+id/btn_contactus"
-            android:layout_marginTop="10dp"
-            android:backgroundTint="#003C3A"
             android:layout_width="match_parent"
             android:layout_height="70dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#003C3A"
             android:text="Contact Us"
-            android:textStyle="bold"
             android:textSize="20dp"
-
+            android:textStyle="bold"
             >
 
-
         </Button>
-
     </LinearLayout>
 
 </RelativeLayout>
