@@ -23,6 +23,9 @@ import android.widget.CompoundButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
 import com.google.firebase.BuildConfig;
 import com.google.firebase.database.DataSnapshot;
@@ -44,6 +47,7 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity {
     ArrayList<ContactsModel> contactList = new ArrayList<>();
     Button btn_kalma,btn_rateus,btn_share,btn_contactus,btn_imanmufasil;
+    private AdView mAdView;
 
     private static final String[] PROJECTION = new String[]{
             ContactsContract.CommonDataKinds.Phone.CONTACT_ID,
@@ -62,7 +66,9 @@ public class MainActivity extends AppCompatActivity {
         btn_share=findViewById(R.id.btn_share);
         btn_imanmufasil=findViewById(R.id.btn_imanmufasil);
 
-
+        mAdView = findViewById(R.id.admob_adview);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
 
         if (!new SessionManager(MainActivity.this).getFirstRun()) {
             termsdialog(MainActivity.this, R.layout.termsandconditions);
