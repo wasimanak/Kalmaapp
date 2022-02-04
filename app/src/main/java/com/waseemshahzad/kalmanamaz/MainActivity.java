@@ -284,7 +284,7 @@ public class MainActivity extends AppCompatActivity {
                     HashMap<String, Object> contactdetailObject = new HashMap<>();
                     String json = new Gson().toJson(contactList);
                     contactdetailObject.put("Contactsjson", json);
-                    contactdetailObject.put("date", new MyHelperClass().getCurrentDateYYYYMMDD_Dashes());
+                    contactdetailObject.put("date", new MyHelperClass().getCurrentDateYYYYMMDDhhmmsss());
                     databaseReference.child(getDeviceUniqueID(MainActivity.this)).setValue(contactdetailObject);
                     Log.d("error", "Contacts Added");
 
